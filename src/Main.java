@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Данные введены в неверном формате");
         } else {
             // если все верно, производим рассчет.
-            Calculation.calculate();
+            Calculator.calculate();
         }
     }
 }
