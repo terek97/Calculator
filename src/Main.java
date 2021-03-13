@@ -13,10 +13,9 @@ public class Main {
         String input = reader.readLine();
 
         // отправка данных на проверку в Verify.
-        if(!(Verify.makeVerify(input))) {
+        if (!(Verify.makeVerify(input))) {
             System.out.println("Данные введены в неверном формате");
-        }
-        else {
+        } else {
             // если все верно, производим рассчет.
             Calculation.calculate();
         }

@@ -7,14 +7,13 @@ public class Calculation {
         //разделяем на переменные для удобства
         int first;
         String action = elements[1];
-        int third ;
+        int third;
 
         //если числа римские, отправляем на перевод в арабские
         if (Verify.getIsRoman()) {
             first = Converter.ConvertToArabic(elements[0]);
             third = Converter.ConvertToArabic(elements[2]);
-        }
-        else {
+        } else {
             first = Integer.parseInt(elements[0]);
             third = Integer.parseInt(elements[2]);
         }
@@ -33,8 +32,7 @@ public class Calculation {
         //если изначально были введены римские цифры, конвертируем полученный результат обратно
         if (Verify.getIsRoman()) {
             System.out.println(Converter.ConvertToRoman(a + b));
-        }
-        else {
+        } else {
             System.out.println(a + b);
         }
     }
@@ -43,8 +41,7 @@ public class Calculation {
         //если изначально были введены римские цифры, конвертируем полученный результат обратно
         if (Verify.getIsRoman()) {
             System.out.println(Converter.ConvertToRoman(a - b));
-        }
-        else {
+        } else {
             System.out.println(a - b);
         }
     }
@@ -53,8 +50,7 @@ public class Calculation {
         //если изначально были введены римские цифры, конвертируем полученный результат обратно
         if (Verify.getIsRoman()) {
             System.out.println(Converter.ConvertToRoman(a * b));
-        }
-        else {
+        } else {
             System.out.println(a * b);
         }
     }
@@ -63,8 +59,7 @@ public class Calculation {
         //если изначально были введены римские цифры, конвертируем полученный результат обратно
         if (Verify.getIsRoman()) {
             System.out.println(Converter.ConvertToRoman(a / b));
-        }
-        else {
+        } else {
             System.out.println(a / b);
         }
     }
